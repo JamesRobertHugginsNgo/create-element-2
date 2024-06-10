@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+}
+
+.form {
+    margin: 1rem auto;
+    max-width: 960px;
+
+    &>h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 1rem 0;
+    }
+}
+
+.section {
+    margin: 1rem 0;
+
+    &>h3 {
+        background-color: #eeeeee;
+        border: 1px solid lightgray;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: normal;
+        margin: 0;
+        padding: 0.5rem 1rem;
+
+        &+div {
+            border-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+
+    &>div {
+        border: 1px solid lightgray;
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+
+    &>div {
+        flex: 1;
+    }
+}
+
+.field {
+    &>label {
+        display: block;
+        margin-bottom: 0.25rem;
+
+        &>span {
+            color: #666666;
+        }
+    }
+
+    &>.pre-help-text {
+        color: #666666;
+        font-size: 0.875rem;
+        font-style: italic;
+        margin-bottom: 0.25rem;
+    }
+
+    &>.post-help-text {
+        color: #666666;
+        font-size: 0.875rem;
+        font-style: italic;
+        margin-top: 0.25rem;
+    }
+}
+
+.text-field {
+    &>input {
+        border: 1px solid lightgray;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        display: block;
+        font-size: 0.875rem;
+        line-height: inherit;
+        padding: 0.5rem 0.75rem;
+        width: 100%;
+
+        &[readonly] {
+            background-color: #eeeeee;
+            cursor: not-allowed;
+
+            &:focus {
+                outline: 1px dotted #212121;
+                outline: 5px auto -webkit-focus-ring-color;
+            }
+        }
+    }
+}
+
+.textarea-field {
+    &>textarea {
+        border: 1px solid lightgray;
+        border-radius: 0.5rem 0.5rem 0 0.5rem;
+        box-sizing: border-box;
+        display: block;
+        font-size: 0.875rem;
+        line-height: inherit;
+        padding: 0.5rem 0.75rem;
+        width: 100%;
+    }
+}
+
+.fieldset {
+    &>legend {
+        display: block;
+        margin-bottom: 0.25rem;
+        padding: 0;
+        width: 100%;
+
+        &>span {
+            color: #666666;
+        }
+    }
+
+    &>.pre-help-text {
+        color: #666666;
+        font-size: 0.875rem;
+        font-style: italic;
+        margin-bottom: 0.25rem;
+    }
+
+    &>.post-help-text {
+        color: #666666;
+        font-size: 0.875rem;
+        font-style: italic;
+        margin-top: 0.25rem;
+    }
+}
+
+.checkbox-set-field {
+    &>.checkbox-set {
+        border: 1px solid lightgray;
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
+        line-height: inherit;
+        padding: 0.5rem 0.75rem;
+
+        &>div+div {
+            margin-top: 0.25rem;
+        }
+    }
+}
+
+.repeatcontrol-row {
+    &>h4 {
+        font-size: 1rem;
+        line-height: normal;
+        margin: 0 0 1rem 0;
+    }
+
+    &>.repeatcontrol-sets {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &>.repeatcontrol-set {
+            &>h5 {
+                font-size: 1rem;
+                line-height: normal;
+                margin: 0 0 1rem 0;
+            }
+
+            &>div {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            &>button {
+                background-color: #eeeeee;
+                border: 1px solid lightgray;
+                border-radius: 0.5rem;
+                box-sizing: border-box;
+                color: #333333;
+                cursor: pointer;
+                display: block;
+                font-size: 0.875rem;
+                line-height: inherit;
+                margin-top: 1rem;
+                padding: 0.5rem 0.75rem;
+
+                &:hover {
+                    background-color: #ffffff;
+                    border-color: darkgray;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    &>button {
+        background-color: #eeeeee;
+        border: 1px solid lightgray;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        color: #333333;
+        cursor: pointer;
+        display: block;
+        font-size: 0.875rem;
+        line-height: inherit;
+        margin-top: 1rem;
+        padding: 0.5rem 0.75rem;
+
+        &:hover {
+            background-color: #ffffff;
+            border-color: darkgray;
+            color: black;
+        }
+    }
+}
